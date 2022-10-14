@@ -1,6 +1,6 @@
-import React from "react";
 import BestOffer from "../../atoms/buttons/bestoffer";
-const HeroBannerCard = ({image, brand,discount }) => {
+type Props = {image:string, brand: string, discount: string}
+const HeroBannerCard = ({image, brand,discount }: Props) => {
   return (
     <>
       <div className="herobannercard">

@@ -1,8 +1,12 @@
-
-
-const ViewAll = () => {
+import { useNavigate } from "react-router-dom";
+type Props = {viewall:string}
+const ViewAll = ({viewall}:Props) => {
+  const navigate = useNavigate()
     const handlesubmit =()=>{
-        console.log("hello world");
+      navigate({
+        pathname: '/viewall',
+        search: `?${viewall}`,
+      });
     }
   return (
     <div className="view-all-button-wrapper mt-4">

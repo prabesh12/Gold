@@ -1,7 +1,7 @@
 import HappyClient from "../../atoms/buttons/happyclient";
 import Offer from "../../atoms/buttons/offer";
 
-type Props = {image:string, brand:string, location:string, discount:string, deadline: string, feature: boolean, key: any}
+type Props = {image:string, brand:string, location:string, discount:string, deadline: string, feature?: boolean, key: any}
 
 const ListCard = ({image, brand, location, discount, deadline, feature, key}: Props) => {
   return (

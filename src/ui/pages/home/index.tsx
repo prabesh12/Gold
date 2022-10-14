@@ -5,10 +5,9 @@ import Offers from "../../component/compound/featuredoffer";
 import HeroSlider from "../../component/compound/herobanner";
 import GetUpdates from "../../component/molecules/getupdates";
 
-const data : {title: string, api: string, feature: boolean} []= [
-
-  { title: "Featured Offer", api: "featuredoffer", feature: false },
-  { title: "Limited Offer", api: "limitedoffer", feature: true  },
+const data : {title: string, api: string, feature: boolean, viewall: string} []= [
+  { title: "Featured Offer", api: "featuredoffer", feature: false, viewall: "featured" },
+  { title: "Limited Offer", api: "limitedoffer", feature: true , viewall: "limitedoffer" },
 ];
 
 const Home = () => {
@@ -24,6 +23,7 @@ const Home = () => {
             title={data.title}
             api={data.api}
             feature={data?.feature ? true : false}
+            viewall={data?.viewall}
           />
         );
       })}

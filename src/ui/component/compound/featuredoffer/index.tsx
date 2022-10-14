@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect } from "react";
 import ListCard from "../../molecules/listcard";
 import Axios from "axios";
 import ViewAll from "../../atoms/buttons/viewall";
-type Props = { title: string; api: string; feature: boolean };
-const Offers = ({ title, api, feature }: Props) => {
-  const [data, setData] = useState([]);
-
+import GlobalSearchContext from "../../../../context/GlobalContext";
+type Props = { title: string; api: string; feature: boolean, viewall: string };
+const Offers = ({ title, api, feature, viewall }: Props) => {
+const {data , setData} = useContext<any>(GlobalSearchContext);
   useEffect(() => {
     Axios.get(`http://localhost:3001/${api}`)
       .then((res) => {
@@ -13,7 +13,7 @@ const Offers = ({ title, api, feature }: Props) => {
         setData(res.data);
       })
       .catch((err) => console.log(err));
-  }, [api]);
+  }, [api, setData]);
 
   return (
     <>
@@ -35,7 +35,7 @@ const Offers = ({ title, api, feature }: Props) => {
               );
             })}
         </div>
-        <ViewAll />
+        <ViewAll viewall = {viewall} />
       </div>
     </>
   );

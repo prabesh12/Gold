@@ -1,5 +1,5 @@
 import {createContext} from "react"
 
-const GlobalSearchContext = createContext(null);
+const GlobalSearchContext : any = createContext<any>(null);
 
 export default GlobalSearchContext;

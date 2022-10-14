@@ -26,7 +26,6 @@
     "eject": "react-scripts eject",
     "db": "json-server --watch -p 3001 db.json"
   },
-
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -47,6 +46,7 @@
   },
   "devDependencies": {
     "@types/react": "^18.0.21",
-    "@types/react-dom": "^18.0.6"
+    "@types/react-dom": "^18.0.6",
+    "@types/react-slick": "^0.23.10"
   }
 }

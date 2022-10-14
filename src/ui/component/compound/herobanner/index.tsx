@@ -31,7 +31,7 @@ const HeroSlider = () => {
     <div className="banner_wrap">
       <Slider {...settings}>
         {data &&
-          data?.map((data) => {
+          data?.map((data:any) => {
             return (
                 <div className="banner_img"  key={data.id}>
                   <Link to="/" className="banner-card-content-link">
