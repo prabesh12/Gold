@@ -1,0 +1,19 @@
+.common {
+  background-color: #bd6300;
+  @include flexProperty(flex, row, center, center);
+  @include setFont(400, 0.8rem, 0.8rem, 0.2rem);
+  color: white;
+  width: max-content;
+  padding: 0px 4px;
+  height: 22px;
+  font-style: normal;
+  text-transform: capitalize;
+  border-radius: 4px;
+}
+.offer {
+  font-family: $Mulish;
+}
+.happy-client {
+    text-transform: uppercase !important;
+    font-family: $Tinos;
+}

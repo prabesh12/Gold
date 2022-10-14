@@ -1,0 +1,38 @@
+.herobannercard {
+  position: relative;
+  @include flexProperty(flex, row, center, center);
+  height: 530px;
+
+  img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    @include flexProperty(flex, column, center, center);
+     
+    .offering-brand{
+      text-align: center;
+      color:$secondary-color;
+      @include setFont(500, 2rem, 2.3rem,2px);
+        width: 30%;
+        font-family: $Tinos ;
+    }
+
+    .offered-package{
+      color: white;
+      @include setFont(400, 1.1rem,1.1rem,1px);
+      font-family: $Tinos;
+       
+    }
+    p{
+      margin-bottom: 1.5rem !important;
+    }
+  }
+}

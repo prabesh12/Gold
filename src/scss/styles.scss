@@ -1,0 +1,26 @@
+@import './variables/colors';
+@import "./variables/fonts";
+@import "./mixins/mixins";
+@import "./pages/homepage";
+@import "./sections/header";
+@import "./component/molecule/heroslidercard.scss";
+@import "./component/molecule/listcard.scss";
+@import "./component/atoms/bestoffer/bestoffer";
+@import "./component/atoms/offer/offer";
+@import "./component/atoms/viewall/viewall";
+@import "./component/atoms/subscribe/subscribe";
+@import "./component/molecule/getupdates";
+@import  "./sections/footer";
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    z-index: 1;    
+}
+body{
+    background: rgb(238, 238, 238);
+    overflow-x: hidden;
+}
+p{
+    margin-bottom: 0px;
+}

@@ -1,0 +1,24 @@
+@mixin setFont($font-weight, $size, $line-height, $letter-spacing )
+{
+    // font-family: $Lato;
+    font-weight: $font-weight;
+    font-size: $size;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+}
+
+@mixin transition
+{
+    transition: transform 0.8s;
+
+    &:hover {
+        transform: scale(1.03);
+    }
+}
+
+@mixin flexProperty($display, $direction, $justify-content, $align-items){
+      display: $display;
+      flex-direction: $direction;
+      justify-content: $justify-content;
+      align-items: $align-items;
+}

@@ -1,0 +1,73 @@
+.list-card {
+  @include flexProperty(flex, column, space-between, flex-start);
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #dedede;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 8px 16px 0px 16px;
+  height: 360px;
+  cursor: pointer;
+
+  .img-wrapper {
+    width: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      max-height: 170px;
+      min-height: 150px;
+      object-fit: contain;
+    }
+  }
+  .content {
+    height: 100%;
+    width: 100%;
+    min-height: 150px;
+    max-height: 180px;
+    @include flexProperty(flex, column, center, flex-start);
+    .brand {
+      @include setFont(600, 1.2rem, 1.2rem, 0.01rem);
+      font-family: $Tinos;
+      font-style: normal;
+      color: #000000;
+      margin-bottom: 8px;
+      text-transform: capitalize;
+    }
+    .location {
+      @include setFont(600, 0.8rem, 0.8rem, 0.05rem);
+      font-family: $Mulish;
+      font-style: normal;
+      color: #414141;
+      margin-bottom: 8px;
+    }
+    .offer-wrapper {
+      @include flexProperty(flex, row, space-between, center);
+      width: 100%;
+      margin-bottom: 8px;
+      .offered-discount {
+        font-family: $Tinos;
+        font-style: normal;
+        @include setFont(400, 0.8rem, 0.8rem, 0.01rem);
+        color: #414141;
+        text-transform: none;
+        margin-left: 10px;
+        text-align: start;
+        width: 100%;
+      }
+    }
+    .deadline {
+      width: 100%;
+      @include flexProperty(flex, row, flex-start, center);
+      font-family: $Tinos;
+      font-style: normal;
+      @include setFont(500, 0.9rem, 0.9rem, 0.01rem);
+      text-transform: capitalize;
+      margin-bottom: 8px;
+      width: max-content;
+      font-style: italic;
+      opacity: 80%;
+      color: #bd6300;
+      padding: 3px;
+    }
+  }
+}

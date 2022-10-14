@@ -1,0 +1,187 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+
+  "bestoffer": [
+    {
+      "id": 1,
+      "image": "images/hero1.webp",
+      "brand": "JWELERY FROM RIDHI SIDHI SHOP",
+      "discount": "50% off on making design"
+    },
+    {
+      "id": 2,
+      "image": "images/slider-2.webp",
+      "brand": "JWELERY FROM SHALIMAR JWELERS",
+      "discount": "50% off on making design"
+    },
+    {
+      "id": 3,
+      "image": "images/slider-3.webp",
+      "brand": "JWELERY FROM CLASSIC DIAMOND JWELERES",
+      "discount": "50% off on making design"
+    }
+  ],
+
+  "featuredoffer": [
+    {
+      "id": 1,
+      "image": "images/bangles.png",
+      "brand": "RIDHI SIDHI SHOP",
+      "location":"Kathmandu, Bisal Bazar",
+      "discount": "50% off on making design"
+      
+    },
+    {
+      "id": 2,
+      "image": "images/bangle2.png",
+      "brand": ".Shalimar Jewellers",
+      "location":"Kathmandu, Bisal Bazar",
+      "discount": "50% off on making design"
+      
+    },
+    {
+      "id": 3,
+      "image": "images/earing.webp",
+      "brand": "R.B.Diamond Jewellers",
+      "location":"Kathmandu, Bisal Bazar",
+      "discount": "50% off on making design"
+      
+    },
+    {
+      "id": 4,
+      "image": "images/earring2.png",
+      "brand": "Asri JEWELERS PVT. LTD.",
+      "location":"Kathmandu, Bisal Bazar",
+      "discount": "50% off on making design"
+      
+    },
+    {
+      "id": 5,
+      "image": "images/bangle2.png",
+      "brand": "Classic Diamond Jewellers",
+      "location":"Kathmandu, Bisal Bazar",
+      "discount": "50% off on making design"
+      
+    },
+    {
+      "id": 6,
+      "image": "images/locket.png",
+      "brand": "Shagoon jeweller",
+      "location":"Kathmandu, Bisal Bazar",
+      "discount": "50% off on making design"
+      
+    },
+    {
+      "id": 7,
+      "image": "images/necklace.png",
+      "brand": "Shree Ganapati Jewellers",
+      "location":"Kathmandu, Bisal Bazar",
+      "discount": "50% off on making design"
+      
+    },
+    {
+      "id": 8,
+      "image": "images/bangles.png",
+      "brand": "Vairab Jewelry & Gems",
+      "location":"Kathmandu, Bisal Bazar",
+      "discount": "50% off on making design"
+      
+    },
+    {
+      "id": 9,
+      "image": "images/neckalce.png",
+      "brand": "Marigold Jewellers",
+      "location":"Kathmandu, Bisal Bazar",
+      "discount": "50% off on making design"
+      
+    }
+  ],
+
+  "limitedoffer": [
+    {
+      "id": 1,
+      "image": "images/ring.webp",
+      "brand": "Classic Diamond Jewellers",
+      "location":"Kathmandu, Bisal Bazar",
+      "discount": "50% off on making design",
+      "deadline":"02day:10hour:20mins"
+      
+    },
+    {
+      "id": 2,
+      "image": "images/bracelet.png",
+      "brand": "Marigold Jewellers",
+      "location":"Kathmandu, Bisal Bazar",
+      "discount": "50% off on making design",
+      "deadline":"02day:10hour:20mins"
+      
+    },
+    {
+      "id": 3,
+      "image": "images/earring3.png",
+      "brand": " RIDHI SIDHI SHOP",
+      "location":"Kathmandu, Bisal Bazar",
+      "discount": "50% off on making design",
+      "deadline":"02day:10hour:20mins"
+      
+    },
+    {
+      "id": 4,
+      "image": "images/necklace.png",
+      "brand": " Classic Diamond Jewellers",
+      "location":"Kathmandu, Bisal Bazar",
+      "discount": "50% off on making design",
+      "deadline":"02day:10hour:20mins"
+      
+    },
+    {
+      "id": 5,
+      "image": "images/leafearing.webp",
+      "brand": " Shagoon jeweller",
+      "location":"Kathmandu, Bisal Bazar",
+      "discount": "50% off on making design",
+      "deadline":"02day:10hour:20mins"
+      
+    },
+    {
+      "id": 6,
+      "image": "images/locket.png",
+      "brand": "Shree Ganapati Jewellers",
+      "location":"Kathmandu, Bisal Bazar",
+      "discount": "50% off on making design",
+      "deadline":"02day:10hour:20mins"
+      
+    },
+    {
+      "id": 7,
+      "image": "images/necklace.png",
+      "brand": "Asri JEWELERS PVT. LTD.",
+      "location":"Kathmandu, Bisal Bazar",
+      "discount": "50% off on making design",
+      "deadline":"02day:10hour:20mins"
+      
+    },
+    {
+      "id": 8,
+      "image": "images/bangles.png",
+      "brand": "RIDHI SIDHI SHOP",
+      "location":"Kathmandu, Bisal Bazar",
+      "discount": "50% off on making design",
+      "deadline":"02day:10hour:20mins"
+      
+    }
+  ]
+}

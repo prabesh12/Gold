@@ -1,0 +1,33 @@
+.get-updates {
+  background: $primary-color;
+  width: 100%;
+  height: 100px;
+  opacity: 87%;
+  display: flex;
+  align-items: center;
+  .update-text {
+    @include flexProperty(flex, row, flex-start, center);
+    img {
+      width: 40px;
+      height: 40px;
+    }
+    p {
+      @include setFont(400, 1rem, 1rem, 0.05rem);
+      font-family: $Tinos;
+      color: #ffffff;
+      margin-left: 10px;
+    }
+  }
+  .input-wrapper {
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+    @include flexProperty(flex, row, space-between, center);
+    background-color: white;
+    input {
+        width: 100%;
+      border: none;
+      outline: none;
+    }
+  }
+}

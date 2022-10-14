@@ -1,0 +1,23 @@
+.view-all-button-wrapper{
+    width: 100%;
+    @include flexProperty(flex, row, center, center);
+    .view-all{
+        background-color: $primary-color;
+        color: white;
+        @include setFont(500, 1rem, 1rem, 0.01rem);
+        font-family: $Mulish;
+        font-style: normal;
+        text-transform: capitalize;
+        width: 140px;
+        height: 40px;
+        border-radius: 50px;
+        text-align: center;
+        opacity: 87%;
+        border: none;
+        outline: none;
+        &:hover{
+             opacity: 100%;
+             transition: 0.35 ease-in-out;
+        }
+    }
+}
