@@ -8,10 +8,17 @@
   @include flexProperty(flex, row, center, center);
   @include setFont(400, 1.2rem, 1.2rem, 1px);
   color: white;
-
   &:hover{
     background-color: white;
     color: $primary-color;
   }
+}
 
+@include media-sm {
+  .best-offer{
+    width: 100px;
+    height: 40px;
+    z-index: 10;
+    @include setFont(400, 1rem, 1rem, 1px);
+  }
 }

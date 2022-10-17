@@ -1,3 +1,4 @@
+@import "../../mixins/config";
 .herobannercard {
   position: relative;
   @include flexProperty(flex, row, center, center);
@@ -35,4 +36,27 @@
       margin-bottom: 1.5rem !important;
     }
   }
+}
+
+@include media-sm {
+  .herobannercard{
+           height: 200px;
+           width: 100%;
+           .content {        
+            .offering-brand{
+              @include setFont(400, 1rem, 1.3rem,1px);
+                width: 100%;
+            }
+            .offered-package{
+              color: white;
+              @include setFont(400, 1rem,1rem,1px);
+              font-family: $Tinos;
+               
+            }
+            p{
+              margin-bottom: 1.5rem !important;
+            }
+          }
+
+     }
 }

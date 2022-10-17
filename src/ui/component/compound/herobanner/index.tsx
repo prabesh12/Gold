@@ -28,7 +28,7 @@ const HeroSlider = () => {
     NextArrow:false
   };
   return (
-    <div className="banner_wrap">
+    <div className="banner_wrap ">
       <Slider {...settings}>
         {data &&
           data?.map((data:any) => {

@@ -1,22 +1,19 @@
 import React from "react";
+import { useGolbalSearch } from "../../../context/GlobalContext";
 import Footer from "../../component/atoms/footer/footer";
 import Header from "../../component/atoms/header/index";
 import Offers from "../../component/compound/featuredoffer";
 import HeroSlider from "../../component/compound/herobanner";
 import GetUpdates from "../../component/molecules/getupdates";
 
-const data : {title: string, api: string, feature: boolean, viewall: string} []= [
-  { title: "Featured Offer", api: "featuredoffer", feature: false, viewall: "featured" },
-  { title: "Limited Offer", api: "limitedoffer", feature: true , viewall: "limitedoffer" },
-];
 
 const Home = () => {
-
+ const {subject} = useGolbalSearch();
   return (
     <div className="homepage">
       <Header />
       <HeroSlider/>
-      {data.map((data) => {
+      {subject.map((data:any) => {
         return (
           <Offers
             key={data.title}

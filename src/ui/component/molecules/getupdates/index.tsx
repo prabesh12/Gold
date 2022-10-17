@@ -9,7 +9,7 @@ const GetUpdates = () => {
           <div className="row justify-content-between align-items-center">
             <div className="col-md-6">
               <div className="update-text">
-                <img src="icons/gmail.png" alt="gmail-icon" />
+                <img src="/icons/gmail.png" alt="gmail-icon" />
                 <p>Sign up to get latest updates </p>
               </div>
             </div>

@@ -1,4 +1,7 @@
 footer {
+  position: relative;
+  bottom: 0px;
+  top: 90px;
   background: $primary-color;
   height: 600px;
   .main-wrapper {
@@ -7,7 +10,6 @@ footer {
     @include flexProperty(flex, column, space-between, center);
     .footer-element {
       margin-top: 20px;
-      padding: 20px;
       width: 100%;
       h4 {
         font-family: $Tinos;
@@ -77,7 +79,8 @@ footer {
 
   .footer-image {
     width: 100%;
-    background: url("../../../public/images/footer-bg.webp")  no-repeat center center ; 
+    background: url("../../../public/images/footer-bg.webp") no-repeat center
+      center;
     background-size: cover;
     height: 600px;
     padding: 35px;
@@ -95,14 +98,43 @@ footer {
         color: white;
         margin-bottom: 10px;
         @include setFont(400, 0.9rem, 1.3rem, 0.085rem);
-
-
       }
     }
   }
 }
 
-// @include media-sm {
-//   footer {
-
-// }
+@include media-sm {
+  footer {
+    width: 100%;
+    .main-wrapper {
+      .footer-element {
+        display: flex;
+        flex-direction: column;
+        .social-media {
+          margin-top: 10px;
+          width: 50%;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .footer-image {
+      height: 100%;
+    }
+  }
+}
+@include media-md {
+  footer {
+    width: 100%;
+    .main-wrapper {
+      .footer-element {
+        display: flex;
+        flex-direction: column;
+        .social-media {
+          margin-top: 10px;
+          width: 40%;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

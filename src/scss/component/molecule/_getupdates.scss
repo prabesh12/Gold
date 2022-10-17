@@ -1,4 +1,6 @@
 .get-updates {
+  position: relative;
+  top: 90px;
   background: $primary-color;
   width: 100%;
   height: 100px;
@@ -29,5 +31,12 @@
       border: none;
       outline: none;
     }
+  }
+}
+
+
+@include media-sm {
+  .get-updates {
+    display: none;
   }
 }

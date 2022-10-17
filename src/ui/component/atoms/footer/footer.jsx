@@ -6,7 +6,7 @@ const Footer = () => {
       {/* <div className="container-fluid"> */}
         <div className="row justify-content-between ">
           <div className="col-md-6 col-sm-12 col-xl-6 col-lg-6">
-            <div className="main-wrapper">
+            <div className="main-wrapper container-fluid">
               <div className="footer-element">
                 <div className="detail">
                   <div className="company-detail">
@@ -21,11 +21,11 @@ const Footer = () => {
                   <div className="contact-us">
                     <h4>Contact</h4>
                     <div className="gmail-wrapper common-wrapper">
-                      <img src="icons/gmail.png" alt="" />
+                      <img src="/icons/gmail.png" alt="" />
                       <p>service@gmail.com</p>
                     </div>
                     <div className="phone-wrapper common-wrapper">
-                      <img src="icons/phone.png" alt="" />
+                      <img src="/icons/phone.png" alt="" />
                       <p>9062698763</p>
                     </div>
                   </div>
@@ -33,9 +33,9 @@ const Footer = () => {
                 <div className="social-media">
                   <h4>Follow Us</h4>
                   <div className="icon-wrapper">
-                    <img src="icons/fb.png" alt="" />
-                    <img src="icons/twitter.png" alt="" />
-                    <img src="icons/insta.png" alt="" />
+                    <img src="/icons/fb.png" alt="" />
+                    <img src="/icons/twitter.png" alt="" />
+                    <img src="/icons/insta.png" alt="" />
                   </div>
                 </div>
               </div>

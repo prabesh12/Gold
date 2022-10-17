@@ -3,19 +3,23 @@
 @import "./mixins/mixins";
 @import "./pages/homepage";
 @import "./sections/header";
+@import "./sections/herobanner";
 @import "./component/molecule/heroslidercard.scss";
 @import "./component/molecule/listcard.scss";
+@import "./sections/featuredoffer";
 @import "./component/atoms/bestoffer/bestoffer";
 @import "./component/atoms/offer/offer";
 @import "./component/atoms/viewall/viewall";
 @import "./component/atoms/subscribe/subscribe";
 @import "./component/molecule/getupdates";
 @import  "./sections/footer";
+@import "./pages/detailpage";
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     z-index: 1;    
+
 }
 body{
     background: rgb(238, 238, 238);

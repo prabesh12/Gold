@@ -1,0 +1,33 @@
+.banner_wrap{
+    position: relative;
+    top: 90px;
+    width: 100%;
+
+    .slick-slider {
+        .slick-arrow {
+          width: 37px;
+          height: 37px;
+        }
+      }
+      .slick-next {
+        content: "→";
+        position: absolute;
+        right: 0px;
+        color: #fff;
+        border-radius: 50%;
+        z-index: 2;
+
+      }
+      .slick-prev {
+        content: "→";
+        position: absolute;
+        left: 0px;
+        color: #fff;
+        border-radius: 50%;
+        z-index: 2;
+
+      }
+
+    
+}
+
