@@ -5,6 +5,7 @@ header {
   z-index: 10;
   width: 100%;
   top: 0;
+  left: 0;
   height: 90px;
   @include flexProperty(flex, row, flex-end, center);
   nav {
@@ -13,7 +14,6 @@ header {
       @include flexProperty(flex, row, space-between, center);
       margin: 0;
       padding: 0;
-
       li {
         .nav-item {
           text-transform: capitalize;
@@ -60,6 +60,32 @@ header {
 }
 @include media-sm {
   header {
-    display: none;
+    width: 100vw;
+    img{
+      display: none;
+    }
+    nav{
+      display:none;
+    }
+    .search-wrapper{
+      width: 100%;
+    }
   }
 }
+
+@include media-md {
+  header {
+    width: 100vw;
+    img{
+      display: none;
+    }
+    nav{
+      display:none;
+    }
+    .search-wrapper{
+      width: 100%;
+    }
+  }
+}
+
+

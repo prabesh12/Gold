@@ -2,6 +2,7 @@ footer {
   position: relative;
   bottom: 0px;
   top: 90px;
+  width: 100%;
   background: $primary-color;
   height: 600px;
   .main-wrapper {
@@ -79,7 +80,7 @@ footer {
 
   .footer-image {
     width: 100%;
-    background: url("../../../public/images/footer-bg.webp") no-repeat center
+    background: url("../../../public/images/footer-bg.webp") center
       center;
     background-size: cover;
     height: 600px;
@@ -102,9 +103,9 @@ footer {
     }
   }
 }
-
 @include media-sm {
   footer {
+    top: 100px;
     width: 100%;
     .main-wrapper {
       .footer-element {
@@ -125,6 +126,7 @@ footer {
 @include media-md {
   footer {
     width: 100%;
+    top: 100px !important;
     .main-wrapper {
       .footer-element {
         display: flex;

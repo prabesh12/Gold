@@ -1,49 +1,61 @@
-.detail-page{
-    position: relative;
-    top: 100px;
+.detail-page {
+  position: relative;
+  top: 100px;
+  height: auto;
+  @include flexProperty(flex, column, center, flex-start);
+  .detail-image {
+    width: 100%;
     height: 100%;
-    @include flexProperty(flex, column,center, flex-start);
-
-
-    
-    .detail-image{
-        width: 100%;
-        height: 100%;
-        max-width: 500px;
-        max-height: 500px;
-        object-fit: cover;
+    max-width: 500px;
+    max-height: 500px;
+    object-fit: cover;
+  }
+  .content {
+    height: 100%;
+    @include flexProperty(flex, column, space-evenly, flex-start);
+    .brand {
+      color: $primary-color;
+      @include setFont(500, 1.3rem, 1.3rem, 0.05rem);
+      font-style: normal;
+      text-transform: capitalize;
+    }
+    .location,
+    .discount {
+      @include setFont(400, 1rem, 1rem, 0.05rem);
+      opacity: 0.87;
     }
 
-
-    .content{
-        height: 100%;
-        @include flexProperty(flex, column,space-evenly, flex-start);
+    a {
+      text-decoration: none;
+      color: #bd6300;
     }
 
-    .brand{
-        color:$primary-color;
-        @include setFont (500, 1.3rem, 1.3rem, 0.05rem);
-        font-style: normal;
-        text-transform: capitalize;
-    }
-   .location, .discount{
-    @include setFont (400, 1rem, 1rem, 0.05rem);
-    opacity: 0.87;
-   }
+    .deadline {
+      @include flexProperty(flex, row, center, flex-start);
 
-   a{
-    text-decoration: none;
-    color: #BD6300;
-   }
-
-   .deadline{
-    @include flexProperty(flex, row, center, flex-start);
-    
-    .text, .time{
-        @include setFont (400, 1rem, 1rem, 0.05rem);
+      .text,
+      .time {
+        @include setFont(400, 1rem, 1rem, 0.05rem);
         color: $secondary-color;
         font-style: italic;
+      }
     }
-   }
+  }
+}
 
+@include media-sm {
+  .detail-page {
+    .detail-image {
+
+    }
+    .content {
+      .brand,
+      .location,
+      .discount,
+      .deadline,
+      a {
+        margin-bottom: 10px;
+      }
+    }
+  }
 }

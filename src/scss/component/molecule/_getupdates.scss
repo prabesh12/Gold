@@ -1,6 +1,6 @@
 .get-updates {
   position: relative;
-  top: 90px;
+  top: 100px;
   background: $primary-color;
   width: 100%;
   height: 100px;
@@ -27,16 +27,48 @@
     @include flexProperty(flex, row, space-between, center);
     background-color: white;
     input {
-        width: 100%;
+      width: 100%;
       border: none;
       outline: none;
     }
   }
 }
 
-
 @include media-sm {
   .get-updates {
-    display: none;
+    height: 120px;
+    .update-text {
+      @include flexProperty(flex, row, flex-start, center);
+      img {
+        width: 25px;
+        height: 25px;
+      }
+      p {
+        @include setFont(400, 0.9rem, 0.9rem, 0.05rem);
+      }
+    }
+    .input-wrapper {
+       margin-top: 10px;
+      padding:4px 6px;
+    }
+  }
+}
+@include media-md {
+  .get-updates {
+    height: 120px;
+    .update-text {
+      @include flexProperty(flex, row, flex-start, center);
+      img {
+        width: 25px;
+        height: 25px;
+      }
+      p {
+        @include setFont(400, 0.9rem, 0.9rem, 0.05rem);
+      }
+    }
+    .input-wrapper {
+       margin-top: 10px;
+      padding:4px 6px;
+    }
   }
 }

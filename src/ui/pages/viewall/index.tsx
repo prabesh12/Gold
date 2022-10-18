@@ -6,13 +6,17 @@ import ListCard from "../../component/molecules/listcard";
 import { Link } from "react-router-dom";
 import Axios from "axios";
 import { useGolbalSearch } from "../../../context/GlobalContext";
+import GetUpdates from "../../component/molecules/getupdates";
 
 const ViewAll = () => {
   const location = useLocation();
   const navigate = useNavigate();
   console.log(location.search, "url");
-  const {searchData} = useGolbalSearch();
- const [displayData, setDisplayData] = useState([]);
+  const { searchData, setSearchData } = useGolbalSearch();
+  const [displayData, setDisplayData] = useState([]);
+  const [filteredData, setFilteredData] = useState([]);
+
+  console.log(displayData, "display data");
   const handleDetailPage = (id: string, detail: string) => {
     navigate({
       pathname: `/detailpage/${id}`,
@@ -22,20 +26,25 @@ const ViewAll = () => {
   useEffect(() => {
     if (location.search === "?featured") {
       Axios.get(`http://localhost:3001/featuredoffer`).then((res) => {
-        console.log(res.data, "display data");
         setDisplayData(res.data);
       });
     } else {
       Axios.get(`http://localhost:3001/limitedoffer`).then((res) => {
-        console.log(res.data);
         setDisplayData(res.data);
       });
     }
   }, [location]);
-
-  const filteredData = displayData?.filter((item:any) => {
-    return item?.brand.includes(searchData);
-  });
+  useEffect(() => {
+    console.log(location.pathname, "path");
+    if (location.pathname === "/viewall") setSearchData("");
+  }, [location, setSearchData]);
+  useEffect(() => {
+    const filter = displayData?.filter((item: any) => {
+      return item?.brand.includes(searchData);
+    });
+    console.log(filter, "5");
+    setFilteredData(filter);
+  }, [searchData, displayData]);
   return (
     <>
       <Header />
@@ -55,65 +64,63 @@ const ViewAll = () => {
             </p>
           </div>
           <div className="row">
-            { !filteredData && displayData  ?  
-              displayData?.map((item: any) => {
-                return (
-                  <div
-                    className="col-md-4 col-lg-3 col-xl-3 col-sm-6 mt-4"
-                    key={item.id}
-                  >
+            {filteredData.length === 0 && displayData
+              ? displayData?.map((item: any) => {
+                  return (
                     <div
-                      onClick={() =>
-                        handleDetailPage(
-                          item.id,
-                          item.feature ? "limitedoffer" : "featuredoffer"
-                        )
-                      }
+                      className="col-md-4 col-lg-3 col-xl-3 col-sm-6 mt-4"
+                      key={item.id}
                     >
-                      <ListCard
-                        image={item.image}
-                        brand={item.brand}
-                        location={item.location}
-                        discount={item.discount}
-                        deadline={item.deadline}
-                        feature={item.feature}
-                      />
+                      <div
+                        onClick={() =>
+                          handleDetailPage(
+                            item.id,
+                            item.feature ? "limitedoffer" : "featuredoffer"
+                          )
+                        }
+                      >
+                        <ListCard
+                          image={item.image}
+                          brand={item.brand}
+                          location={item.location}
+                          discount={item.discount}
+                          deadline={item.deadline}
+                          feature={item.feature}
+                        />
+                      </div>
                     </div>
-                  </div>
-                );
-
-              })
-            : filteredData?.map((item:any)=>{
-              return(
-                        <div
-                    className="col-md-4 col-lg-3 col-xl-3 col-sm-6 mt-4"
-                    key={item.id}
-                  >
+                  );
+                })
+              : filteredData?.map((item: any) => {
+                  return (
                     <div
-                      onClick={() =>
-                        handleDetailPage(
-                          item.id,
-                          item.feature ? "limitedoffer" : "featuredoffer"
-                        )
-                      }
+                      className="col-md-4 col-lg-3 col-xl-3 col-sm-6 mt-4"
+                      key={item.id}
                     >
-                      <ListCard
-                        image={item.image}
-                        brand={item.brand}
-                        location={item.location}
-                        discount={item.discount}
-                        deadline={item.deadline}
-                        feature={item.feature}
-
-                      />
+                      <div
+                        onClick={() =>
+                          handleDetailPage(
+                            item.id,
+                            item.feature ? "limitedoffer" : "featuredoffer"
+                          )
+                        }
+                      >
+                        <ListCard
+                          image={item.image}
+                          brand={item.brand}
+                          location={item.location}
+                          discount={item.discount}
+                          deadline={item.deadline}
+                          feature={item.feature}
+                        />
+                      </div>
                     </div>
-                  </div>
-              )
-            })
-            }
+                  );
+                })}
           </div>
         </div>
       </div>
+      <GetUpdates />
       <Footer />
     </>
   );

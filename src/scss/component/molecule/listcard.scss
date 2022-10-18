@@ -1,3 +1,4 @@
+@import "../../mixins/config";
 .list-card {
   @include flexProperty(flex, column, space-between, flex-start);
   width: 100%;
@@ -68,6 +69,52 @@
       opacity: 80%;
       color: #bd6300;
       padding: 3px;
+    }
+  }
+}
+
+@include media-md  {
+  .list-card {
+    .content {
+      .brand {
+        @include setFont(600, 0.9rem, 0.9rem, 0.01rem);
+      }
+      .location {
+        @include setFont(500, 0.8rem, 0.8rem, 0.05rem);
+      }
+      .offer-wrapper {
+        .offered-discount {
+          @include setFont(400, 0.75rem, 0.75rem, 0.01rem);
+        }
+      }
+      .deadline {
+
+        @include setFont(500, 0.8rem, 0.8rem, 0.01rem);
+
+      }
+    }
+  }
+}
+
+@include media-lg{
+  .list-card {
+    .content {
+      .brand {
+        @include setFont(600, 0.9rem, 0.9rem, 0.01rem);
+      }
+      .location {
+        @include setFont(500, 0.8rem, 0.8rem, 0.05rem);
+      }
+      .offer-wrapper {
+        .offered-discount {
+          @include setFont(400, 0.75rem, 0.75rem, 0.01rem);
+        }
+      }
+      .deadline {
+
+        @include setFont(500, 0.8rem, 0.8rem, 0.01rem);
+
+      }
     }
   }
 }

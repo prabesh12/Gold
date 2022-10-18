@@ -27,14 +27,14 @@
       "image": "/images/slider-2.webp",
       "brand": "JWELERY FROM SHALIMAR JWELERS",
       "discount": "50% off on making design",
-      "link":"https://shalimarjewellers.com.np/"
+      "link":"https://www.bgasc.com/category/buy-silver?r=sastext&SSAID=415573"
     },
     {
       "id": 3,
       "image": "/images/slider-3.webp",
       "brand": "JWELERY FROM CLASSIC DIAMOND JWELERES",
       "discount": "50% off on making design",
-      "link":"https://shalimarjewellers.com.np/"
+      "link":"https://www.apmex.com/"
     }
   ],
 
@@ -120,7 +120,7 @@
     },
     {
       "id": 9,
-      "image": "/images/neckalce.png",
+      "image": "/images/necklace.png",
       "brand": "Marigold Jewellers",
       "location":"Kathmandu, Bisal Bazar",
       "discount": "50% off on making design",
@@ -210,6 +210,94 @@
     },
     {
       "id": 8,
+      "image": "/images/bangles.png",
+      "brand": "RIDHI SIDHI SHOP",
+      "location":"Kathmandu, Bisal Bazar",
+      "discount": "50% off on making design",
+      "deadline":"02day:10hour:20mins",
+      "feature":true,
+      "link":"https://shalimarjewellers.com.np/"
+      
+    },
+    {
+      "id": 9,
+      "image": "/images/ring.webp",
+      "brand": "Classic Diamond Jewellers",
+      "location":"Kathmandu, Bisal Bazar",
+      "discount": "50% off on making design",
+      "deadline":"02day:10hour:20mins",
+      "feature":true,
+      "link":"https://shalimarjewellers.com.np/"
+      
+    },
+    {
+      "id": 10,
+      "image": "/images/bracelet.png",
+      "brand": "Marigold Jewellers",
+      "location":"Kathmandu, Bisal Bazar",
+      "discount": "50% off on making design",
+      "deadline":"02day:10hour:20mins",
+      "feature":true,
+      "link":"https://shalimarjewellers.com.np/"
+      
+    },
+    {
+      "id": 11,
+      "image": "/images/earring3.png",
+      "brand": " RIDHI SIDHI SHOP",
+      "location":"Kathmandu, Bisal Bazar",
+      "discount": "50% off on making design",
+      "deadline":"02day:10hour:20mins",
+      "feature":true,
+      "link":"https://shalimarjewellers.com.np/"
+      
+    },
+    {
+      "id": 12,
+      "image": "/images/necklace.png",
+      "brand": " Classic Diamond Jewellers",
+      "location":"Kathmandu, Bisal Bazar",
+      "discount": "50% off on making design",
+      "deadline":"02day:10hour:20mins",
+      "feature":true,
+      "link":"https://shalimarjewellers.com.np/"
+      
+    },
+    {
+      "id": 13,
+      "image": "/images/leafearing.webp",
+      "brand": " Shagoon jeweller",
+      "location":"Kathmandu, Bisal Bazar",
+      "discount": "50% off on making design",
+      "deadline":"02day:10hour:20mins",
+      "feature":true,
+      "link":"https://shalimarjewellers.com.np/"
+      
+    },
+    {
+      "id": 14,
+      "image": "/images/locket.png",
+      "brand": "Shree Ganapati Jewellers",
+      "location":"Kathmandu, Bisal Bazar",
+      "discount": "50% off on making design",
+      "deadline":"02day:10hour:20mins",
+      "feature":true,
+      "link":"https://shalimarjewellers.com.np/"
+      
+    },
+    {
+      "id": 15,
+      "image": "/images/necklace.png",
+      "brand": "Asri JEWELERS PVT. LTD.",
+      "location":"Kathmandu, Bisal Bazar",
+      "discount": "50% off on making design",
+      "deadline":"02day:10hour:20mins",
+      "feature":true,
+      "link":"https://shalimarjewellers.com.np/"
+      
+    },
+    {
+      "id": 16,
       "image": "/images/bangles.png",
       "brand": "RIDHI SIDHI SHOP",
       "location":"Kathmandu, Bisal Bazar",

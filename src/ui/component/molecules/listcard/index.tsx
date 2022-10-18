@@ -1,11 +1,25 @@
 import HappyClient from "../../atoms/buttons/happyclient";
 import Offer from "../../atoms/buttons/offer";
 
-type Props = {image:string, brand:string, location:string, discount:string, deadline: string, feature?: boolean}
+type Props = {
+  image: string;
+  brand: string;
+  location: string;
+  discount: string;
+  deadline: string;
+  feature?: boolean;
+};
 
-const ListCard = ({image, brand, location, discount, deadline, feature}: Props) => {
+const ListCard = ({
+  image,
+  brand,
+  location,
+  discount,
+  deadline,
+  feature,
+}: Props) => {
   return (
-      <div className="list-card">
+    <div className=" list-card col-md-4 col-lg-4 col-xl-3 col-sm-6">
         <div className="img-wrapper">
           <img src={image} alt="" />
         </div>

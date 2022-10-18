@@ -2,7 +2,7 @@
 .herobannercard {
   position: relative;
   @include flexProperty(flex, row, center, center);
-  height: 530px;
+  height: 550px;
 
   img {
     position: absolute;
@@ -22,7 +22,7 @@
       text-align: center;
       color:$secondary-color;
       @include setFont(500, 2rem, 2.3rem,2px);
-        width: 30%;
+        width: 35%;
         font-family: $Tinos ;
     }
 
@@ -40,6 +40,7 @@
 
 @include media-sm {
   .herobannercard{
+          
            height: 200px;
            width: 100%;
            .content {        
@@ -58,5 +59,49 @@
             }
           }
 
+     }
+}
+
+@include media-md {
+  .herobannercard{
+           height: 350px;
+           width: 100%;
+           .content {        
+            .offering-brand{
+              @include setFont(500, 1.2rem, 1.3rem,1px);
+                width: 100%;
+            }
+            .offered-package{
+              color: white;
+              @include setFont(400, 1rem,1rem,1px);
+              font-family: $Tinos;
+               
+            }
+            p{
+              margin-bottom: 1.5rem !important;
+            }
+          }
+
+     }
+}
+
+@include media-lg {
+  .herobannercard{
+           height: 400px !important;
+           border: 2px solid black;
+           .content {        
+            .offering-brand{
+              @include setFont(500, 1.3rem, 1.3rem,1px);
+                width: 50%;
+            }
+            .offered-package{
+              color: white;
+              @include setFont(400, 1rem,1rem,1px);
+              font-family: $Tinos;
+            }
+            p{
+              margin-bottom: 1.5rem !important;
+            }
+          }
      }
 }

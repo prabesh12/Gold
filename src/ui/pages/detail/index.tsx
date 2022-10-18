@@ -4,7 +4,6 @@ import Footer from "../../component/atoms/footer/footer";
 import Header from "../../component/atoms/header";
 import Axios from "axios";
 import GetUpdates from "../../component/molecules/getupdates";
-
 const DetailPage = () => {
   const location = useLocation();
   const { id } = useParams();

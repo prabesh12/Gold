@@ -1,4 +1,4 @@
-@import './variables/colors';
+@import "./variables/colors";
 @import "./variables/fonts";
 @import "./mixins/mixins";
 @import "./pages/homepage";
@@ -12,19 +12,19 @@
 @import "./component/atoms/viewall/viewall";
 @import "./component/atoms/subscribe/subscribe";
 @import "./component/molecule/getupdates";
-@import  "./sections/footer";
+@import "./component/atoms/scrolltotop/scrolltotop";
+@import "./sections/footer";
 @import "./pages/detailpage";
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    z-index: 1;    
-
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
 }
-body{
-    background: rgb(238, 238, 238);
-    overflow-x: hidden;
+body {
+  background: rgb(238, 238, 238);
+  overflow-x: hidden;
 }
-p{
-    margin-bottom: 0px;
+p {
+  margin-bottom: 0px;
 }

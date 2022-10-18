@@ -16,7 +16,7 @@ export const useGolbalSearch: any = () => {
 };
 
 export const GlobalSearchProvider = ({ children }: PropsWithChildren) => {
-    const [data, setData] = useState()
+    const [data, setData] = useState([])
     const [searchData, setSearchData] = useState("");
  
 
