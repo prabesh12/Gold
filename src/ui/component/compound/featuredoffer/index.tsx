@@ -2,12 +2,14 @@ import { useEffect, useState } from "react";
 import ListCard from "../../molecules/listcard";
 import Axios from "axios";
 import ViewAll from "../../atoms/buttons/viewallbutton";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useGolbalSearch } from "../../../../context/GlobalContext";
 type Props = { title: string; api: string; feature: boolean; viewall: string };
 
 const Offers = ({ title, api, feature, viewall }: Props) => {
-  const { data, setData, searchData } = useGolbalSearch();
+  const { data, setData, searchData , setSearchData} = useGolbalSearch();
+  const location = useLocation();
+
   const [filteredData, setFilteredData] = useState([]);
   const navigate = useNavigate();
   console.log(data, "setData");
@@ -35,6 +37,10 @@ const Offers = ({ title, api, feature, viewall }: Props) => {
     setFilteredData(filter);
   }, [searchData, data]);
 
+  useEffect(() => {
+    console.log(location.pathname, "path");
+    if (location.pathname === "/") setSearchData("");
+  }, [location, setSearchData]);
   return (
     <>
       <div className="featured-offer" id="featured-offer">

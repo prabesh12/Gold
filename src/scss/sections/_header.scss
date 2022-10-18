@@ -23,7 +23,7 @@ header {
           @include setFont(400, 0.95rem, 0.95rem, 1px);
         }
         .active {
-          color: #ffb565;
+          color: $secondary-color;
           text-decoration: none;
           @include setFont(400, 0.95rem, 0.5rem, 1px);
         }
@@ -39,7 +39,8 @@ header {
   .search-wrapper {
     width: 100%;
     @include flexProperty(flex, row, flex-start, center);
-    border-bottom: 2px solid #ffb565;
+    border-bottom: 2px solid $secondary-color;
+    opacity: 90%;
     color: white;
     img {
       width: 30px;

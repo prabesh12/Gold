@@ -2,6 +2,7 @@
   position: relative;
   top: 100px;
   height: auto;
+  padding-bottom: 10px;
   @include flexProperty(flex, column, center, flex-start);
   .detail-image {
     width: 100%;
