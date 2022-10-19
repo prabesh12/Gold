@@ -1,6 +1,5 @@
 @mixin setFont($font-weight, $size, $line-height, $letter-spacing )
 {
-    // font-family: $Lato;
     font-weight: $font-weight;
     font-size: $size;
     line-height: $line-height;

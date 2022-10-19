@@ -9,7 +9,7 @@
     }
 }
 @mixin media-lg {
-    @media only screen and (min-width: 768px) and (max-width: 1318){
+    @media only screen and (min-width: 768px) and (max-width: 1318px){
         @content;
     }
 }
